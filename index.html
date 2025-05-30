@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for exams</title>
+</head>
+<body>
+    <h2>REGISTRATION FORM </h2>
+    <form action="/action.php">
+        <fieldset>
+            <legend><h3>Personal Details</h3></legend>
+
+            <!--TEXT INPUT-->
+            <label for="name">Name:</label>
+            <input type="text" placeholder="username" required>
+            
+            <!--PASSWORD -->
+            <label for="password">Password:</label>
+            <input type="password" placeholder="password" required>
+            <br><br>
+
+            <!--DATE -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!--NUMBER-->
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="18" max="25" required>
+            <br><br>
+
+            <!--E-MAIL-->
+            <label for="email">Email Address:</label>
+            <input type="email" placeholder="xyz@gmail.com" required>
+            <br><br>
+
+            <!--RADIO BUTTONS-->
+            <p> Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br><br>
+
+            <!--DROPDOWN-->
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="select your city">--Select--</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Patna">Patna</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+            </select>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>Academic Details</h3></legend>
+                <p>Class: </p>
+                <label for="101">
+                <input type="radio" id="101" value="Class X" name="class">Class X
+                </label>
+                <label for="102">
+                <input type="radio" id="102" value="Class XII" name="class">Class XII
+                </label>
+                <label for="103">
+                <input type="radio" id="103" value="UG" name="class">UG
+                </label>
+                <br>
+                
+                <!--CHECKBOXES-->
+                <p>Subjects:</p>
+                <input type="checkbox" id="maths" name="subject" value="maths">
+                <label for="maths">Maths</label>
+                <input type="checkbox" id="physics" name="subject" value="physics">
+                <label for="physics">Physics</label>
+                <input type="checkbox" id="chemistry" name="subject" value="chemistry">
+                <label for="chemistry">Chemistry</label>
+                <input type="checkbox" id="english" name="subject" value="english">
+                <label for="english">English</label>
+                <input type="checkbox" id="computer science" name="subject" value="computer science">
+                <label for="computer science">Computer Science</label>
+                <br><br>
+
+                <!--TABLE-->
+                <label for ="skills">Technical Skills: </label>
+                <table border="1">
+                    <tr>
+                        <th>Skills</th>
+                        <th>Languages</th>
+                        <th>Experience (in years)</th>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="type1" required> </td>
+                        <td> <input type="text" name="type2" required> </td>
+                        <td> <input type="number" name="exp1" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="type3" required> </td>
+                        <td> <input type="text" name="type4" required> </td>
+                        <td> <input type="number" name="exp2" required> </td>
+                    </tr>
+                </table>
+                <br>
+
+                <!--FILE UPLOAD-->
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+                <br><br>
+                </fieldset>
+
+                <fieldset>
+                <legend><h3>Feedback</h3></legend>
+
+                <!--TEXTAREA-->
+                <textarea name="feedback" id="100" rows="5" cols="50" placeholder="Give your valuable feedback here!!"></textarea>
+                <br>
+
+                <!--BUTTON-->
+                <input type="reset" value="Clear Form">
+                <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
